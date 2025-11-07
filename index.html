@@ -1,1 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Master - Professional CV & Portfolio Design</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom class for the hero section background */
+        .hero-bg {
+            background-color: #f8fafc; /* A light gray background */
+        }
+        /* Active nav link styling */
+        .nav-link {
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: #2563eb; /* blue-600 */
+        }
+        /* Section padding for desktop and mobile */
+        .section-padding {
+            padding: 4rem 1.5rem; /* 64px 24px */
+        }
+        @media (min-width: 768px) {
+            .section-padding {
+                padding: 6rem 2.5rem; /* 96px 40px */
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <a href="#home" class="text-2xl font-bold text-blue-600">
+                    CV Master
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex md:items-center md:space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 font-medium">Home</a>
+                    <a href="#services" class="nav-link text-gray-600 font-medium">Services</a>
+                    <a href="#portfolio" class="nav-link text-gray-600 font-medium">Portfolio</a>
+                    <a href="#about" class="nav-link text-gray-600 font-medium">About</a>
+                    <a href="#contact"
+                        class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium shadow-md hover:bg-blue-700 transition duration-300">
+                        Get Started
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <a href="#home" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50">Home</a>
+            <a href="#services" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50">Services</a>
+            <a href="#portfolio" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50">Portfolio</a>
+            <a href="#about" class="block px-4 py-3 text-gray-600 font-medium hover:bg-gray-50">About</a>
+            <a href="#contact"
+                class="block px-4 py-3 text-blue-600 font-medium hover:bg-gray-50 border-t border-gray-100">Get
+                Started</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Section 1: Home / Hero -->
+        <section id="home" class="hero-bg">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-20 md:py-32 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+                    Land Your Dream Job.
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                    We build professional CVs and stunning portfolio websites that make you stand out.
+                </p>
+                <div class="mt-8 flex justify-center gap-4">
+                    <a href="#services"
+                        class="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg text-base font-medium shadow-lg hover:bg-blue-700 transition duration-300 transform hover:-translate-y-0.5">
+                        View Packages
+                    </a>
+                    <a href="#portfolio"
+                        class="inline-block bg-white text-gray-700 px-8 py-3 rounded-lg text-base font-medium shadow-md border border-gray-200 hover:bg-gray-50 transition duration-300">
+                        See Our Work
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Services / Pricing -->
+        <section id="services" class="section-padding">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Packages</h2>
+                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
+                        Choose the perfect solution to jumpstart your career.
+                    </p>
+                </div>
+
+                <!-- Pricing Grid -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Package 1: Bronze (CV) -->
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900">Bronze (CV Only)</h3>
+                        <p class="mt-2 text-gray-600">The perfect, polished, ATS-friendly CV.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-bold text-gray-900">$XX</span>
+                            <span class="text-gray-500">/ one-time</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>30-min Consultation</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Custom CV Design</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Content Writing & Editing</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>2 Revision Rounds</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>PDF & Word Files</li>
+                        </ul>
+                        <div class="mt-auto pt-6">
+                            <a href="#contact" class="w-full text-center inline-block bg-blue-100 text-blue-700 px-6 py-3 rounded-lg text-base font-medium hover:bg-blue-200 transition duration-300">
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Package 2: Gold (CV + Portfolio) - Featured -->
+                    <div class="bg-blue-600 text-white border-2 border-blue-600 rounded-2xl shadow-2xl p-8 flex flex-col relative overflow-hidden">
+                        <span class="absolute top-0 right-0 bg-yellow-300 text-yellow-800 text-xs font-bold px-3 py-1 rounded-bl-lg">Most Popular</span>
+                        <h3 class="text-2xl font-bold">Gold (CV + Portfolio)</h3>
+                        <p class="mt-2 text-blue-100">The all-in-one career-launching solution.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-bold">$XXX</span>
+                            <span class="text-blue-200">/ one-time</span>
+                        </div>
+                        <ul class="space-y-3 text-blue-50">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Everything in Bronze & Silver</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Cohesive Branding</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>1-on-1 Strategy Call (60 min)</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-white mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>10% Discount</li>
+                        </ul>
+                        <div class="mt-auto pt-6">
+                            <a href="#contact" class="w-full text-center inline-block bg-white text-blue-600 px-6 py-3 rounded-lg text-base font-bold hover:bg-gray-100 transition duration-300 transform hover:-translate-y-0.5">
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Package 3: Silver (Portfolio) -->
+                    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-8 flex flex-col">
+                        <h3 class="text-2xl font-bold text-gray-900">Silver (Portfolio Only)</h3>
+                        <p class="mt-2 text-gray-600">A beautiful website to showcase your work.</p>
+                        <div class="my-6">
+                            <span class="text-4xl font-bold text-gray-900">$XX</span>
+                            <span class="text-gray-500">/ one-time</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>30-min Consultation</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>1-Page Portfolio Website</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Mobile-Responsive Design</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Contact Form Integration</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Hosting Setup Guidance</li>
+                        </ul>
+                        <div class="mt-auto pt-6">
+                            <a href="#contact" class="w-full text-center inline-block bg-blue-100 text-blue-700 px-6 py-3 rounded-lg text-base font-medium hover:bg-blue-200 transition duration-300">
+                                Order Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 3: Portfolio -->
+        <section id="portfolio" class="section-padding bg-gray-50">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Work</h2>
+                    <p class="mt-3 text-lg text-gray-600 max-w-2xl mx-auto">
+                        See the quality and professionalism we deliver to every client.
+                    </p>
+                </div>
+
+                <!-- Portfolio Grid -->
+                <!-- 
+                  INSTRUCTIONS: 
+                  1. Upload your portfolio images (e.g., 'cv-example1.png') to your GitHub repository.
+                  2. Change the 'src' attribute from 'https://placehold.co/...' to your image path (e.g., 'cv-example1.png').
+                -->
+                <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Portfolio Item 1 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=CV+Project+1"
+                            alt="CV project for a software engineer" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900">CV for Software Engineer</h3>
+                            <p class="mt-2 text-gray-600">A clean, ATS-friendly design focused on technical skills.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 2 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/D4E2FB/1E40AF?text=Portfolio+Site+1"
+                            alt="Portfolio website for a graphic designer" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900">Portfolio for Graphic Designer</h3>
+                            <p class="mt-2 text-gray-600">A highly visual website to showcase creative work.</p>
+                        </div>
+                    </div>
+
+                    <!-- Portfolio Item 3 -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform transition duration-500 hover:scale-105">
+                        <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=CV+Project+2"
+                            alt="CV project for a marketing manager" class="w-full h-64 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold text-gray-900">CV for Marketing Manager</h3>
+                            <p class="mt-2 text-gray-600">A results-driven CV highlighting metrics and achievements.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Add more items as needed -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: About -->
+        <section id="about" class="section-padding">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">About CV Master</h2>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Hi! I'm [Your Name], the founder of CV Master. With a background in [Your Background, e.g., HR, design, writing], I started this service to help talented professionals like you get past the resume robots and into the interview room.
+                        </p>
+                        <p class="mt-4 text-lg text-gray-600">
+                            Your career story is unique. My mission is to tell that story in the most compelling way possible, through documents and websites that are not only beautiful but also strategically effective.
+                        </p>
+                    </div>
+                    <div>
+                        <img src="https://placehold.co/600x500/D4E2FB/1E40AF?text=Your+Professional+Photo" 
+                             alt="A professional photo of the CV Master founder"
+                             class="rounded-2xl shadow-xl w-full">
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Section 5: Contact -->
+        <section id="contact" class="section-padding bg-blue-600 text-white">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold">Ready to Start Your Order?</h2>
+                    <p class="mt-3 text-lg text-blue-100 max-w-2xl mx-auto">
+                        Contact me directly through WhatsApp or Email to discuss your project and get started.
+                    </p>
+                </div>
+                
+                <div class="mt-12 max-w-lg mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- 
+                      INSTRUCTIONS:
+                      1. Replace 'YOUR_PHONE_NUMBER' with your full phone number including country code (e.g., 15551234567).
+                      2. Replace 'YOUR_EMAIL@gmail.com' with your actual email address.
+                    -->
+                    
+                    <!-- WhatsApp Button -->
+                    <a href="https://wa.me/+8801827262481?text=Hi%20CV%20Master!%20I'm%20interested%20in%20your%20services."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="flex items-center justify-center p-6 bg-white text-gray-900 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                        <svg class="w-8 h-8 text-green-500 mr-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.451-4.437-9.887-9.888-9.887-5.451 0-9.887 4.436-9.889 9.887-.001 2.225.651 4.315 1.731 6.086l.001.003-1.04 3.833 3.821-1.045z"/></svg>
+                        <span class="text-lg font-semibold">Chat on WhatsApp</span>
+                    </a>
+                    
+                    <!-- Email Button -->
+                    <a href="mailto:cvbuddybd@gmail.com?subject=CV%20Master%20Service%20Inquiry"
+                       class="flex items-center justify-center p-6 bg-white text-gray-900 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+                        <svg class="w-8 h-8 text-red-500 mr-4" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                        <span class="text-lg font-semibold">Send an Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-400">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 text-center">
+            <p>&copy; 2024 CV Master. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        document.getElementById('mobile-menu-button').addEventListener('click', function () {
+            var menu = document.getElementById('mobile-menu');
+            if (menu.classList.contains('hidden')) {
+                menu.classList.remove('hidden');
+            } else {
+                menu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when a link is clicked
+        var mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
